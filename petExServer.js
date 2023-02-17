@@ -39,7 +39,7 @@ app.get('/pets/:id/', function (req, res, next) {
         }else if (petId <= petList.length){
             res.send(petList[petId]);  
         }else{
-            next({});
+            next({}); //Calls error if petId isNan().
         }
     });
 });

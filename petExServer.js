@@ -15,7 +15,7 @@ const petList = JSON.parse(petListArr);
 
 //Setup Path options
 app.get('/index', function (req, res) {
-    res.send('Hello world');
+    res.send('GoodBye world');
 });
 
 
